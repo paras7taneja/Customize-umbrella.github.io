@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet">
+    <script defer src="umbrella.js"></script>
+</head>
+
+<body>
+
+    <section class="main-section">
+        <input id="labelBtn" type="file" accept="image/png,image/jpg,image/svg">
+        <div class="left-side">
+            <img id="blue" class="image" src="" alt="umbrella">
+
+            <p id="logo">
+
+            </p>
+        </div>
+        <div class="right-side">
+            <h1>Custom Umbrella</h1>
+            <span class="palette">
+                <span class="colors">
+                    <p id="blueCol" class="blueCol"></p>
+                </span>
+                <span class="colors">
+                    <p id="yellowCol" class="yellowCol"></p>
+                </span>
+                <span class="colors">
+                    <p id="pinkCol" class="pinkCol"></p>
+                </span>
+            </span>
+            <h4>Customize your umbrella</h4>
+            <p>Upload a logo for an instant preview <br>.png and .jpg files only.Max file sixe is 5MB</p>
+            <button id="btn" type="button">
+                <label for="labelBtn" style="cursor:pointer;">
+                    <img src="upload_white.png" style=" width: 2rem;">
+                </label>
+                <span id="uploadImg">UPLOAD LOGO</span>
+            </button>
+        </div>
+    </section>
+</body>
+
+</html>

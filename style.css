@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Ubuntu:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    transition: all 2s;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+                                                                        /* main section */
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 15%;
+    width: 100%;
+    height: 15rem;
+}
+
+                                                                    /* umbrella both sections */
+
+.left-side {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side img {
+    width: 100%;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6%;
+}
+
+                                                                /* color palette section */
+
+.palette p {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.palette p:hover {
+    box-shadow: 0 1px 4px -1px black;
+}
+
+.palette .blueCol {
+    background: #00A0DC;
+}
+
+.palette .yellowCol {
+    background: #FED34C;
+}
+
+.palette .pinkCol {
+    background: #D82D88;
+}
+
+.palette {
+    display: flex;
+    gap: 1rem;
+}
+
+                                                                /* umbrella animation section */
+
+.service-icon {
+    animation: water-wave 3s linear infinite;
+}
+
+@keyframes water-wave {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.changed-size {
+    width: 20% !important;
+}
+
+                                                                /* change color of umbrella button */
+
+#btn {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    padding: 0.2rem;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#btn img {
+    transition: all 0.3s;
+}
+
+#btn img:hover {
+    translate: 0px -2px;
+}
+
+input[type="file"] {
+    display: none;
+
+}
+
+                                                                    /* logo uploader section */
+
+#logo {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 10%;
+}
+
+
+.left-side {
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    top: 76%;
+}
